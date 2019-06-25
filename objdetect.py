@@ -226,14 +226,14 @@ class Ui_GroupBox(object):
     def retranslateUi(self, GroupBox):
         _translate = QtCore.QCoreApplication.translate
         GroupBox.setWindowTitle(_translate("GroupBox", "识别与检测"))
-        GroupBox.setTitle(_translate("GroupBox", "通用物体识别与主题检测"))
+        GroupBox.setTitle(_translate("GroupBox", "通用物体识别与主体检测"))
         self.groupBox_2.setTitle(_translate("GroupBox", "百科信息"))
         self.label.setText(_translate("GroupBox", "百科描述"))
         self.label_2.setText(_translate("GroupBox", "百科链接"))
         self.label_3.setText(_translate("GroupBox", "百科图片"))
         self.upload.setText(_translate("GroupBox", "上传图像"))
         self.pushButton_2.setText(_translate("GroupBox", "图像识别"))
-        self.detect.setText(_translate("GroupBox", "主题检测"))
+        self.detect.setText(_translate("GroupBox", "主体检测"))
         self.pushButton.setText(_translate("GroupBox", "边框颜色"))
         self.isbaike.setText(_translate("GroupBox", "百科信息"))
         self.groupBox.setTitle(_translate("GroupBox", "识别结果"))

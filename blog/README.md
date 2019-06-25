@@ -130,7 +130,7 @@ def get_token_key():
 
 ### 调用通用物体与场景识别接口
 
-通用物体与场景识别接口类的 python3 代码实现如下：
+通用物体与场景识别接口类及调用的 python3 代码实现如下：
 
 ```python
 import requests
@@ -205,7 +205,7 @@ def detect(image_name, color):
 
 然后将 `.ui` 文件通过 PyUIC 转换为 `.py` 文件，并在生成的 `.py` 文件中添加槽函数的实现，具体的代码如下：
 
-上传图像按钮对应的代码
+**”上传图像“按钮对应的代码**
 
 ```python
 def on_upload_clicked(self):
@@ -228,7 +228,7 @@ def on_upload_clicked(self):
     self.pushButton_2.setEnabled(True)
 ```
 
-图像识别按钮对应的代码
+**“图像识别”按钮对应的代码** ，该代码实现了图像通用物体与场景识别。
 
 ```python
 def on_recognition_clicked(self):
@@ -257,7 +257,7 @@ def on_recognition_clicked(self):
         self.picurl.setText(str_warm)
 ```
 
-主体检测按钮对应的代码
+**“主体检测”按钮对应的代码** ，该代码实现了图像主体检测
 
 ```python
 def on_detect_clicked(self):
@@ -282,7 +282,7 @@ def on_detect_clicked(self):
     self.pushButton.setEnabled(True)
 ```
 
-边框颜色按钮对应的代码
+**“边框颜色”按钮对应的代码，** 该代码实现了改变主体检测中主体边框的颜色
 
 ```python
 def on_choose_color(self):
@@ -311,5 +311,28 @@ def on_choose_color(self):
 
 ![](images/007.png)
 
+## 代码打包
+
+可以使用 pyinstaller 将代码打包
+
+首先安装 pyinstaller
+
+```bash
+pip install pyinstaller
+```
+
+然后将代码打包
+
+```bash
+pyinstaller ruun.py
+```
+
+最终会在主文件下生成 dist 文件夹和 build 文件夹，可执行文件在 dist 文件夹下。
+
 ## 源码地址
 
+* 源代码：[https://github.com/busyboxs/qt-baidu-image-recognizition](https://github.com/busyboxs/qt-baidu-image-recognizition)
+
+* 可执行文件链接：[https://pan.baidu.com/s/11J09VeWzl2W2pcNeHz0Ovw](https://pan.baidu.com/s/11J09VeWzl2W2pcNeHz0Ovw) 提取码：tm9i 
+
+可执行文件路径 `~/BaiDuDetect/dist/ruun/ruun.exe`
